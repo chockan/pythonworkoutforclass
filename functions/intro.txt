@@ -1,0 +1,84 @@
+Functions:
+Functions and its use: Function is a group of related statements that perform a specific task.
+Functions help break our program into smaller and modular chunks. As our program grows
+larger and larger, functions make it more organized and manageable. It avoids repetition and
+makes code reusable.
+Basically, we can divide functions into the following two types:
+
+
+1. Built-in functions - Functions that are built into Python.
+Ex: abs(),all().ascii(),bool()………so on….
+integer = -20
+print('Absolute value of -20 is:', abs(integer))
+Output:
+Absolute value of -20 is: 20
+
+2. User-defined functions - Functions defined by the users themselves.
+
+def add_numbers(x,y):
+sum = x + y
+return sum
+print("The sum is", add_numbers(5, 20))
+Output:
+The sum is 25
+
+
+def hf():
+print("hw")
+print("gh kfjg 66666")
+hf()
+hf()
+hf()
+
+
+Parameters and arguments:
+Parameters are passed during the definition of function while Arguments are passed during
+the function call.
+Example:
+#here a and b are parameters
+def add(a,b): #//function definition
+return a+b
+#12 and 13 are arguments
+#function call
+result=add(12,13)
+print(result)
+
+
+There are three types of Python function arguments using which we can call a function.
+1. Default Arguments
+2. Keyword Arguments
+3. Variable-length Argument
+
+
+The return statement is used to exit a function and go back to the place from where it was
+called. This statement can contain expression which gets evaluated and the value is returned.
+If there is no expression in the statement or the return statement itself is not present inside a
+function, then the function will return the None object.
+
+
+def hf():
+    return "hw"
+print(hf())
+Output:
+hw
+def hf():
+    return "hw"
+hf()
+
+Variable-length arguments
+Sometimes you may need more arguments to process function then you mentioned in the
+definition. If we don’t know in advance about the arguments needed in function, we can use
+variable-length arguments also called arbitrary arguments.
+
+For this an asterisk (*) is placed before a parameter in function definition which can hold
+non-keyworded variable-length arguments 
+
+and a double asterisk (**) is placed before a
+parameter in function which can hold keyworded variable-length arguments.
+
+If we use one asterisk (*) like *var, then all the positional arguments from that point till the
+end are collected as a tuple called ‘var’ and 
+
+if we use two asterisks (**) before a variable like
+**var, then all the positional arguments from that point till the end are collected as
+a dictionary called ‘var’.

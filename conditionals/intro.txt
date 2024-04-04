@@ -1,0 +1,139 @@
+
+CONTROL FLOW, LOOPS
+Conditionals: 
+
+Boolean values and operators, conditional (if), alternative (if-else), chained
+conditional (if-elif-else); Iteration: while, for, break, continue
+
+
+
+Conditional (if):
+The if statement contains a logical expression using which data is compared and a decision
+is made based on the result of the comparison.
+
+Alternative if (If-Else):
+An else statement can be combined with an if statement. An else statement contains the
+block of code (false block) that executes if the conditional expression in the if statement
+resolves to 0 or a FALSE value.
+
+Syntax:
+if expression:
+    statement(s)
+
+Syntax of if - else :
+if test expression:
+    Body of if stmts
+else:
+    Body of else stmts
+
+
+Chained Conditional: (If-elif-else):
+The elif statement allows us to check multiple expressions for TRUE and execute a
+block of code as soon as one of the conditions evaluates to TRUE. Similar to the else,
+the elif statement is optional. However, unlike else, for which there can be at most one
+statement, there can be an arbitrary number of elif statements following an if.
+
+Syntax of if – elif - else :
+If test expression:
+    Body of if stmts
+elif test expression:
+    Body of elif stmts
+else:
+    Body of else stmts
+
+
+Iteration:
+A loop statement allows us to execute a statement or group of statements multiple times as
+long as the condition is true. Repeated execution of a set of statements with the help of loops
+is called iteration.
+Loops statements are used when we need to run same code again and again, each time with a
+different value.
+Statements:
+
+In Python Iteration (Loops) statements are of three types:
+1. While Loop
+2. For Loop
+3. Nested For Loops
+
+While loop:
+• Loops are either infinite or conditional. Python while loop keeps reiterating a block of
+code defined inside it until the desired condition is met.
+• The while loop contains a boolean expression and the code inside the loop is
+repeatedly executed as long as the boolean expression is true.
+• The statements that are executed inside while can be a single line of code or a block of
+multiple statements.
+
+Syntax:
+while(expression):
+ Statement(s)
+
+For loop:
+Python for loop is used for repeated execution of a group of statements for the desired
+number of times. It iterates over the items of lists, tuples, strings, the dictionaries and other
+iterable objects.
+
+Nested For loop:
+When one Loop defined within another Loop is called Nested Loops.
+Syntax:
+for val in sequence:
+    for val in sequence:
+
+Break and continue:
+
+In Python, break and continue statements can alter the flow of a normal loop. Sometimes
+we wish to terminate the current iteration or even the whole loop without checking test
+expression. The break and continue statements are used in these cases.
+
+Break:
+The break statement terminates the loop containing it and control of the program flows to
+the statement immediately after the body of the loop. If break statement is inside a nested
+loop (loop inside another loop), break will terminate the innermost loop.
+
+
+The following shows the working of break statement in for and while loop:
+for var in sequence:
+    # code inside for loop
+    If condition:
+        break (if break condition satisfies it jumps to outside loop)
+    # code inside for loop
+# code outside for loop
+
+
+
+while test expression
+    # code inside while loop
+    If condition:
+        break (if break condition satisfies it jumps to outside loop)
+    # code inside while loop
+# code outside while loop
+
+
+Continue:
+The continue statement is used to skip the rest of the code inside a loop for the current
+iteration only. Loop does not terminate but continues on with the next iteration.
+
+
+The following shows the working of break statement in for and while loop:
+
+for var in sequence:
+    # code inside for loop
+    If condition:
+        continue (if break condition satisfies it jumps to outside loop)
+    # code inside for loop
+# code outside for loop
+
+
+while test expression
+    # code inside while loop
+    If condition:
+        continue(if break condition satisfies it jumps to outside loop)
+    # code inside while loop
+# code outside while loop
+
+
+Pass:
+In Python programming, pass is a null statement. The difference between
+a comment and pass statement in Python is that, while the interpreter ignores a comment
+entirely, pass is not ignored.
+pass is just a placeholder for functionality to be added later.
+

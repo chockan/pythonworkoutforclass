@@ -1,0 +1,79 @@
+Local and Global scope:
+Local Scope:
+A variable which is defined inside a function is local to that function. It is accessible from
+the point at which it is defined until the end of the function, and exists for as long as the
+function is executing
+
+Global Scope:
+A variable which is defined in the main body of a file is called a global variable. It will be
+visible throughout the file, and also inside any file which imports that file.
+• The variable defined inside a function can also be made global by using the global
+statement.
+def function_name(args):
+.............
+global x #declaring global variable inside a function
+..............
+# create a global variable
+
+
+x = "global"
+def f():
+print("x inside :", x)
+f()
+print("x outside:", x)
+
+
+x inside : global
+x outside: global
+# create a local variable
+def f1():
+    y = "local"
+    print(y)
+f1()
+
+Output:
+local
+
+
+• If we try to access the local variable outside the scope for example,
+def f2():
+    y = "local"
+f2()
+print(y)
+Then when we try to run it shows an error,
+print(y)
+NameError: name 'y' is not defined
+The output shows an error, because we are trying to access a local variable y in a global
+scope whereas the local variable only works inside f2() or local scope.
+# use local and global variables in same code
+x = "global"
+def f3():
+    global x
+    y = "local"
+    x = x * 2
+    print(x)
+    print(y)
+f3()
+Output:
+globalglobal
+local
+
+    • In the above code, we declare x as a global and y as a local variable in the f3(). Then,
+we use multiplication operator * to modify the global variable x and we print
+both x and y.
+    • After calling the f3(), the value of x becomes global global because we used the x *
+2 to print two times global. After that, we print the value of local variable y i.e local.
+
+
+# use Global variable and Local variable with same name
+x = 5
+def f4():
+    x = 10
+    print("local x:", x)
+f4()
+print("global x:", x)
+
+
+Output:
+local x: 10
+global x: 5
