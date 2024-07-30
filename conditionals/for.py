@@ -1,3 +1,15 @@
+a="hello"
+b='sachin'
+for i in b:
+    print(i)
+print()
+################################
+for i in a:
+    print(i,end='')
+print()
+
+
+#################################################
 numbers = [1, 2, 4, 6, 11, 20]
 seq=0
 for val in numbers:

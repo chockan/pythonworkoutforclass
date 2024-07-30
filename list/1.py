@@ -82,3 +82,6 @@ x=[10,1,5,3,8,7]
 print(x.sort())
 # >>> x
 # [1, 3, 5, 7, 8, 10]
+words = ["Hello", "world", "from", "Python"]
+sentence = " ".join(words)
+print(sentence)  # Output: Hello world from Python

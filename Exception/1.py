@@ -35,46 +35,49 @@
 # Different types of Exceptions in Python
 # In Python, exceptions are events that occur during the execution of a program that disrupts the normal flow of instructions. Here are some common types of exceptions in Python:
 
-# SyntaxError:
+SyntaxError:
 
 # Raised when there is a syntax error in the code, indicating a mistake in the program’s structure.
 # # Example SyntaxError
 # print("Hello World"  # Missing closing parenthesis
-# IndentationError:
 
+IndentationError:
 Raised when there is an issue with the indentation of the code. Python relies on proper indentation to define blocks of code.
 # Example IndentationError
 if True:
 print("Indented incorrectly")  # Missing indentation
-TypeError:
 
+TypeError:
 Raised when an operation or function is applied to an object of an inappropriate type.
 # Example TypeError
 num = "5"
 result = num + 2  # Trying to concatenate a string with an integer
-ValueError:
 
+ValueError:
 Raised when a built-in operation or function receives an argument with the correct type but an inappropriate value.
 # Example ValueError
 num = int("abc")  # Attempting to convert a non-numeric string to an integer
+
 NameError:
 Raised when an identifier (variable or function name) is not found in the local or global namespace.
 # Example NameError
 print(undefined_variable)  # Variable is not defined
-IndexError:
 
+IndexError:
 Raised when trying to access an index that is outside the bounds of a sequence (e.g., list, tuple, string).
 # Example IndexError
 my_list = [1, 2, 3]
 print(my_list[5])  # Accessing an index that doesn't exist
-KeyError:
 
+
+KeyError:
 Raised when trying to access a dictionary key that does not exist.
 # Example KeyError
 my_dict = {"name": "John", "age": 25}
 print(my_dict["gender"])  # Accessing a key that is not in the dictionary
-FileNotFoundError:
 
+
+FileNotFoundError:
 Raised when attempting to open a file that does not exist.
 # Example FileNotFoundError
 with open("nonexistent_file.txt", "r") as file:

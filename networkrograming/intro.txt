@@ -1,0 +1,33 @@
+ip address
+
+It is unique value.each computer connected to network.
+each ip address uniquely generated.
+each ip address that is assigned to network device is unique.
+
+ex: 203.4.211.111
+
+the value range fron 0.0.0.0. to 255.255.255.255
+
+ip address space is managed by  organisation is called internet 
+assigned numbers authority
+
+Networking:
+
+Networking enables communication and information sharing of any kind.
+It is a process of connecting two or more devices to allow them to exchange information.
+A collection of such interconnected devices is called a network.
+
+Socket Programming: 
+
+Python's socket module allows you to create sockets, which are endpoints for communication between 
+two machines over a network. With sockets, you can establish connections, send and receive data, and handle various 
+network protocols like TCP/IP and UDP.
+
+socket(): Creates a new socket.
+bind(): Associates the socket to a specific address and port.
+listen(): Starts listening for incoming connections on the socket.
+accept(): Accepts a connection from a client and returns a new socket for communication.
+connect(): Establishes a connection to a remote server.
+send(): Sends data through the socket.
+recv(): Receives data from the socket.
+close(): Closes the socket connection.

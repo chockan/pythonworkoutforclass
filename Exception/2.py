@@ -4,6 +4,8 @@ try:
 except ZeroDivisionError as e:
     # Handle the specific exception
     print(f"Error: {e}")
+else:
+    print("no error")
 
 
 ##################################################

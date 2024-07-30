@@ -2,7 +2,7 @@ What is a Module?
 
 Consider a module to be the same as a code library.
 
-A file containing a set of functions you want to include in your application.
+A file containing a set of functions,codes,class you want to include in your application.
 
 
 Save this code in a file named mymodule.py

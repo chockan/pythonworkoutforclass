@@ -1,27 +1,33 @@
 import my
 
+my.abc()
+
+
 
 my.greeting("Jo")
 
-a = my.person1["age"]
+a=my.person1["name"]
 print(a)
+# # print(__name__)
 
 
-#Create an alias for mymodule called mx:
-
-import my as mx
-
-a = mx.person1["age"]
-print(a)
 
 
-#import and use the platform module:
+# #Create an alias for mymodule called mx:
 
-import platform
+# import my as mx
 
-x = platform.system()
-print(x)
+# a = mx.person1["age"]
+# print(a)
 
 
-x = dir(platform)
-print(x)
+# #import and use the platform module:
+
+# import platform
+
+# x = platform.system()
+# print(x)
+
+
+# x = dir(platform)
+# print(x)

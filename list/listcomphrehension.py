@@ -7,7 +7,7 @@
 list1=[]
 for x in range(10):
     list1.append(x**2)
-    print(list1)
+print(list1)
 # [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
 # (or)
 # This is also equivalent to

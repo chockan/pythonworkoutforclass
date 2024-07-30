@@ -8,6 +8,7 @@
 a = [81, 82, 83]
 print(a[:])
 b = a[:] # make a clone using slice
+print(b)
 print(a == b)
 print(a is b)
 b[0] = 5
